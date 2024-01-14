@@ -1,7 +1,7 @@
 {
   "name": "use-fetch-react-vc",
   "version": "1.0.4",
-  "description": "",
+  "description": "A custom react hook to fetch data from an API",
   "main": "dist/index.js",
   "files": [
     "dist"
@@ -12,9 +12,6 @@
     "fetch",
     "use-fetch"
   ],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
