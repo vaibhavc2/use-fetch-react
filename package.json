@@ -1,10 +1,16 @@
 {
   "name": "use-fetch-react-vc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "react",
+    "react-hooks",
+    "fetch",
+    "use-fetch"
   ],
   "exports": {
     ".": {
