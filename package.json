@@ -1,0 +1,39 @@
+{
+  "name": "asdfsd",
+  "version": "1.0.2",
+  "description": "",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "build": "tsc",
+    "preversion": "npm run build",
+    "version": "npm publish",
+    "size": "size-limit"
+  },
+  "size-limit": [
+    {
+      "path": "dist/*.js",
+      "limit": "100 KB"
+    }
+  ],
+  "author": "Vaibhav Chopra",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.2.47",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.1.6"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  }
+}
